@@ -1,0 +1,214 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 20px;
+  background: #E5C6FA;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+body {
+  background: #EFD9AD;
+}
+#top{
+	text-align: center;
+background: #645D53;
+height: 50px;
+text-align: center;
+line-height: 50px;
+position: relative;
+}
+#top .left{
+	left: 15px;
+	position: absolute;
+	top: 10px;
+}
+#top .right{
+	right: 15px;
+	position: absolute;
+	top: 10px;
+}
+#top span{
+	color: white;
+	font-size: 40px;
+}
+.header {
+  padding: 0.1rem;
+  position: relative;
+}
+
+.header input {
+  display: block;
+  width:100%;
+  height: 1rem;
+
+  border: 0;
+  /*border-radius: 10%;*/
+}
+
+.header .add span {
+  /*width: 0.6rem;*/
+  /*height: 0.6rem;*/
+  /*border-radius: 50%;*/
+  /*background: red;*/
+  box-sizing: border-box;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.3rem;
+}
+.todolist {
+  padding: 0.4rem;
+
+}
+
+.todolist li {
+  background: #fff;
+  width: 100%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  padding-left: 0.3rem;
+  margin-bottom: 0.1rem;
+  position: relative;
+
+}
+
+.todolist li .content {
+  color: black;
+}
+
+.todolist li.done .content {
+  color:red;
+}
+
+.todolist li .delete {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background: red;
+  line-height: 0.3rem;
+  text-align: center;
+  color: red;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.2rem;
+}
+/*.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.footer div {
+  width: 33.33%;
+  height: 1rem;
+  line-height: 1rem;
+  float: left;
+  text-align: center;
+  background: #fff;
+}*/
+/*.todolist li {
+  background: #fff;
+  width: 100%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  padding-left: 0.3rem;
+  margin-bottom: 0.1rem;
+  position: relative;
+}
+.todolist li .content {
+  color: #996699;
+}
+
+.todolist li.done .content {
+  color: #C44F00;
+}*/
+.done {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 35px;
+  position: relative;
+  display: none; }
+
+/*.todolist {
+  margin-top: 100px;
+  margin-left: 160px; }*/
+
+/*.content {
+  margin-top: 10px;
+  width: 68%;
+  overflow: hidden;
+  padding: 0.4rem;
+  background: white;
+  margin-left: 35px;
+  position: relative; }
+
+.delete {
+  right: 0;
+  position: absolute;
+  bottom: 0; }
+
+ul, li {
+  list-style: none; }
+
+.clearall {
+  padding: 0 .5rem;
+  margin: .2rem 0;
+  font-size: 12px;
+  text-decoration: underline; }*/
+
+.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0; }
+
+.footer div.active {
+  color: #db4437; }
+
+.footer div {
+  background: white;
+  float: left;
+  width: 33.33%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center; }
+
+.footer .completed {
+  border-right: 1px solid #999;
+  border-left: 1px solid #999; }

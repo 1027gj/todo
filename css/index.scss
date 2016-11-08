@@ -1,0 +1,149 @@
+$d-list:320px,360px, 375px,412px, 414px;
+html{
+    font-size: 100px;
+    list-style: none;
+}
+body{
+    font-size: 16px;
+    background: silver;
+}
+@each $w in $d-list{
+    
+$design-size:750px;
+@media screen and (min-width:#{$w}){
+    html{
+        font-size: 100px * $w/$design-size;
+    }
+}
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.header {
+    padding: 0.3rem;
+    position: relative;
+
+//  position: relative;
+    text-align: center;
+    img{
+//      margin-left: 46px;
+//      position: absolute;
+        top: 6px;
+    
+    }
+
+   
+}
+.rth {
+//  text-align: center;
+display: block;
+  width: 60%;
+  height: 1.0rem;
+  outline: none;
+margin-top: 80px;
+  position: absolute;
+//margin-left:50px ;
+  top: 100px; 
+  left: 20%;
+//position: relative;
+  color: #888;}
+  
+
+.add {
+    width: 10%;
+    height: 1.0rem; 
+    position: absolute;
+//  right:0;
+    top: 180px; 
+    margin-left:70%;
+//  margin-top: 80px;
+//  margin: auto;
+//  right: 0.4rem;
+//  height: 0.4rem;
+    background: #3385FF;
+    text-align: center;
+    line-height: 0.8rem;
+//  border-radius: 50%;
+span{
+    font-size: 15px;
+    color: white;
+}
+}
+
+//.todolist{
+//  margin-top: 10px;
+//}
+.done {
+// width: 68%;
+overflow: hidden;
+//padding: 0.1rem;
+//background: white;
+margin-top: 10px;
+
+margin-left: 35px;
+position: relative;
+ display: none;
+
+} 
+//.todolist{
+////  margin-top: 40px;
+//}  
+.todolist{
+    margin-top: 100px;
+    margin-left:160px ;
+}
+
+.content{
+
+
+margin-top: 10px;
+
+ width: 68%;
+  overflow: hidden;
+  padding: 0.4rem;
+  background: white;
+//margin-top: 100px;
+
+  margin-left: 35px;
+  position: relative;
+// display: none;
+  }
+   .delete{
+//   padding-top: -10px;
+     right: 0;
+       position: absolute;
+//top: 0;
+bottom: 0;
+    }  
+ul, li {
+    list-style: none;
+}
+.clearall {
+    padding: 0 .5rem;
+    margin: .2rem 0;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.footer div.active {
+    color: #db4437;
+}
+.footer div {
+    background: white;
+    float: left;
+    width: 33.33%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.footer .completed {
+    border-right: 1px solid #999;
+    border-left: 1px solid #999;
+}
